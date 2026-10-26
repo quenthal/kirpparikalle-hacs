@@ -123,3 +123,8 @@ python3.13 -m venv .venv
 Testit käyttävät keksittyä dataa eivätkä ota yhteyttä Kirppari-Kalleen.
 
 Versiot: `vuosi.kuukausi.järjestysnumero` (esim. `2026.10.1`).
+
+## Lisenssi
+
+MIT, ks. [LICENSE](LICENSE). Lisenssi koskee tämän repon koodia, ei Kirppari-Kallen
+nimeä tai logoa.
