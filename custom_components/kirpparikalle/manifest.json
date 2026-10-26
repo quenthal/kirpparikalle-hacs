@@ -1,0 +1,12 @@
+{
+  "domain": "kirpparikalle",
+  "name": "Kirppari-Kalle",
+  "codeowners": ["@quenthal"],
+  "config_flow": true,
+  "documentation": "https://github.com/quenthal/kirpparikalle-hacs",
+  "integration_type": "service",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/quenthal/kirpparikalle-hacs/issues",
+  "requirements": [],
+  "version": "2026.10.1"
+}
