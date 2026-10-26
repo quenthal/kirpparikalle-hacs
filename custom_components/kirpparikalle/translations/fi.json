@@ -1,0 +1,60 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Kirppari-Kalle",
+        "description": "Epävirallinen integraatio, jolla ei ole yhteyttä Kirppari-Kalleen eikä Kirppari-Kalle tue sitä. Kirjaudu Kirppari-Kallen myyjätunnuksillasi.",
+        "data": {
+          "username": "Käyttäjätunnus",
+          "password": "Salasana"
+        }
+      },
+      "shop": {
+        "title": "Valitse kirpputori",
+        "description": "Tunnukseesi on liitetty useita kirpputoreja. Lisää nyt yksi; muut voit lisätä myöhemmin.",
+        "data": {
+          "company_id": "Kirpputori"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Kirjaudu uudelleen",
+        "description": "Kirppari-Kalle hylkäsi tunnuksen {username} salasanan. Anna nykyinen salasana.",
+        "data": {
+          "password": "Salasana"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Väärä käyttäjätunnus tai salasana.",
+      "cannot_connect": "Kirppari-Kalleen ei saatu yhteyttä.",
+      "unknown": "Kirjautuminen epäonnistui. Palvelu on voinut muuttua."
+    },
+    "abort": {
+      "already_configured": "Tämä kirpputori on jo lisätty.",
+      "reauth_successful": "Kirjautuminen onnistui."
+    }
+  },
+  "entity": {
+    "binary_sensor": {
+      "reservation_active": { "name": "Myyntijakso" }
+    },
+    "event": {
+      "sales_update": {
+        "name": "Myyntimuutos",
+        "state_attributes": {
+          "event_type": {
+            "state": { "sales_update": "Myyntimuutos" }
+          }
+        }
+      }
+    },
+    "sensor": {
+      "balance": { "name": "Saldo" },
+      "sold_count": { "name": "Myytyjä tuotteita" },
+      "reservation_start": { "name": "Myynti alkaa" },
+      "reservation_end": { "name": "Myynti päättyy" },
+      "checked_at": { "name": "Tarkistettu" },
+      "data_updated_at": { "name": "Tiedot päivitetty" }
+    }
+  }
+}

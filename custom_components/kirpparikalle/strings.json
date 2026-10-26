@@ -1,0 +1,60 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Kirppari-Kalle",
+        "description": "Unofficial integration, not affiliated with or supported by Kirppari-Kalle. Log in with your Kirppari-Kalle seller account.",
+        "data": {
+          "username": "Username",
+          "password": "Password"
+        }
+      },
+      "shop": {
+        "title": "Choose the flea market",
+        "description": "Your account is linked to several flea markets. Add one now; you can add the others later.",
+        "data": {
+          "company_id": "Flea market"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Log in again",
+        "description": "Kirppari-Kalle rejected the password of {username}. Enter the current password.",
+        "data": {
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Wrong username or password.",
+      "cannot_connect": "Kirppari-Kalle could not be reached.",
+      "unknown": "Login failed. The service may have changed."
+    },
+    "abort": {
+      "already_configured": "This flea market is already configured.",
+      "reauth_successful": "Logged in again."
+    }
+  },
+  "entity": {
+    "binary_sensor": {
+      "reservation_active": { "name": "Sales period" }
+    },
+    "event": {
+      "sales_update": {
+        "name": "Sales update",
+        "state_attributes": {
+          "event_type": {
+            "state": { "sales_update": "Sales update" }
+          }
+        }
+      }
+    },
+    "sensor": {
+      "balance": { "name": "Balance" },
+      "sold_count": { "name": "Items sold" },
+      "reservation_start": { "name": "Sales start" },
+      "reservation_end": { "name": "Sales end" },
+      "checked_at": { "name": "Checked" },
+      "data_updated_at": { "name": "Data updated" }
+    }
+  }
+}
